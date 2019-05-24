@@ -1,0 +1,32 @@
+
+* Notes
+
+** pyenv
+
+Missing openssl dev and readline dev
+
+** Audio
+
+** Enki2
+
+   - Spellcheck multiple dictionaries
+
+
+** Python Dev in emacs
+
+*** elpy Notes
+
+    Elpy is the Emacs Python Development Environment. It aims to provide an easy to install, fully-featured environment for Python development.
+
+    https://elpy.readthedocs.io/en/latest/
+    
+    M-x elpy-config
+
+
+** Linux Development Notes
+
+*** Man pages for development
+    sudo apt install manpages-dev
+    sudo apt install manpages-posix-dev
+
+    aptitude search manpages
