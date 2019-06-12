@@ -1,1 +1,9 @@
 * Lazarus Notes
+
+
+** Writing a Custom Control
+
+I want to write a custom control to display a simple grid map that can be edited.
+
+TComponent
+TControl
