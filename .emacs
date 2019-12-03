@@ -1,3 +1,9 @@
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (display-time)
 
 (global-set-key (kbd "s-c r") 'comment-region)
@@ -35,10 +41,16 @@
 (require 'package)
 (add-to-list 'package-archives
          '("melpa" . "https://melpa.org/packages/") t)
-;(package-initialize)
 
 ;; (setq shell-file-name "bash")
 (setq explicit-shell-file-name "/bin/zsh")
 
 (setq c-default-style "linux"
       c-basic-offset 2)
+
+;; Go Mode
+(add-hook 'go-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 4)
+            (setq indent-tabs-mode 1)))
