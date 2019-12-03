@@ -1,0 +1,5 @@
+For Wifi connecting command line look at nimui
+And nmcli
+
+COmmand line reddit - rtv
+
