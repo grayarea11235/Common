@@ -26,6 +26,9 @@
 (sml/setup)
 (setq sml/theme 'dark)
 
+;; more sensible scrolling
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -43,9 +46,13 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 120 :width normal)))))
 
+;; Package stuff setup
 (require 'package)
 (add-to-list 'package-archives
-         '("melpa" . "https://melpa.org/packages/") t)
+	'("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+	'("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
 
 ;; (setq shell-file-name "bash")
 (setq explicit-shell-file-name "/bin/zsh")
