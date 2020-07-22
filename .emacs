@@ -6,6 +6,11 @@
 
 (display-time)
 
+;; Turn on the active buffer active line highlight
+(global-hl-line-mode 1)
+
+
+;; My custom key bings should go here
 (global-set-key (kbd "s-c r") 'comment-region)
 (global-set-key (kbd "s-u r") 'uncomment-region)
 
