@@ -9,6 +9,9 @@
 ;; Turn on the active buffer active line highlight
 (global-hl-line-mode 1)
 
+(require 'spell-fu)
+(global-spell-fu-mode)
+
 
 ;; My custom key bings should go here
 (global-set-key (kbd "s-c r") 'comment-region)
