@@ -1,0 +1,24 @@
+* Notes on Python Programming
+
+
+
+** List Comprehensions
+
+Example
+
+>>> [x+1 for x in range(1, 10)]
+[2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+
+
+** Assignment Operator (3.8)
+
+There is new syntax := that assigns values to variables as part of a larger expression. It is affectionately known as “the walrus operator” due to its resemblance to the eyes and tusks of a walrus.
+
+In this example, the assignment expression helps avoid calling len() twice:
+
+if (n := len(a)) > 10:
+    print(f"List is too long ({n} elements, expected <= 10)")
+
