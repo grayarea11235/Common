@@ -1,0 +1,7 @@
+* Notes on Using Neovim
+
+** Installation
+
+   sudo apt install neovim
+
+Installing plugins use the command PlugInstall
