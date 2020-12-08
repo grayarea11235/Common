@@ -25,7 +25,12 @@ linux_get_bat ()
 {
     bf=$(cat $BAT_FULL)
     bn=$(cat $BAT_NOW)
-    echo $(( 100 * $bn / $bf ))
+    res=$(( 100 * $bn / $bf ))
+    if [ $res -gt 100 ]; then
+      echo 100
+    else
+      echo $(( 100 * $bn / $bf ))
+    fi
 }
 
 freebsd_get_bat ()
