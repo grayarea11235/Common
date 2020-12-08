@@ -1,5 +1,11 @@
-For Wifi connecting command line look at nmtui
+For Wifi connecting command line look at nimui
 And nmcli
 
 Command line reddit - rtv
+
+Cool Command Line Apps
+  - pydf Cool colour df command
+  - wikit - Command line wikipedia lookup - sudo npm install wikit -g
+  - googler - command line google access
+  - browsh - browser in shell
 
