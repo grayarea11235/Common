@@ -1,0 +1,13 @@
+#!/bin/bash
+
+IP=`curl -s https://ipinfo.io/ip`
+
+# echo $IP
+
+LOCJS=`curl -s https://ipinfo.io/$IP`
+
+# echo $LOC
+
+LOC=`echo $LOCJS | jq '.city'`
+
+echo $LOC | sed 's/"//g'
