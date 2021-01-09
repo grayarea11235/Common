@@ -5,3 +5,31 @@
    sudo apt install neovim
 
 Installing plugins use the command PlugInstall
+
+
+** Building
+
+Repository is located here
+git clone https://github.com/neovim/neovim.git
+
+apt install luajit
+apt install ninja-build 
+
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+make install
+
+To skip bundled (third-party/*) dependencies:
+
+    Install the dependencies using a package manager.
+
+    sudo apt install gperf luajit luarocks libuv1-dev libluajit-5.1-dev libunibilium-dev libmsgpack-dev libtermkey-dev libvterm-dev libutf8proc-dev
+    sudo luarocks build mpack
+    sudo luarocks build lpeg
+    sudo luarocks build inspect
+
+    Build with USE_BUNDLED=OFF:
+
+    make CMAKE_BUILD_TYPE=RelWithDebInfo USE_BUNDLED=OFF
+    sudo make install
+
+
