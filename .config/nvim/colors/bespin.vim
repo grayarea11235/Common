@@ -2,8 +2,8 @@
 " Converted from Textmate theme Bespin using Coloration v0.2.5 (http://github.com/sickill/coloration)
 
 set background=dark
-highlight clear
 
+highlight clear
 if exists("syntax_on")
   syntax reset
 endif

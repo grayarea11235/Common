@@ -1,5 +1,7 @@
 set number
-colorscheme blue
+" colorscheme afterglow 
+" colorscheme gotham256 
+colorscheme happy_hacking
 
 set tabstop=2
 set expandtab
