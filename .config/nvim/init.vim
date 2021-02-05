@@ -1,5 +1,5 @@
 set number
-colorscheme blue
+colorscheme afterglow 
 
 set tabstop=2
 set expandtab
@@ -14,10 +14,22 @@ let g:deoplete#enable_at_startup = 1
 
 let g:go_version_warning = 0
 
+" let g:ale_c_cc_options = '-std=c11 -Wall `pkg-config --libs --cflags gtk+-3.0` ``pkg-config --libs --cflags glib-2.0`'
+" ale_cpp_gcc_options
+
+let g:ale_c_gcc_options = '-std=c11 -Wall -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -lglib-2.0'
+let g:ale_c_parse_makefile = 1
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
+
+" ALE plugin for linting and completion
+Plug 'dense-analysis/ale'
+
+" Coc install
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Make sure you use single quotes
 
