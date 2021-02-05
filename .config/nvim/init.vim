@@ -1,5 +1,11 @@
 set number
+<<<<<<< HEAD
 colorscheme afterglow 
+=======
+" colorscheme afterglow 
+" colorscheme gotham256 
+colorscheme happy_hacking
+>>>>>>> 8b8229b2131b05505ab651f5a5896c0c77c9b0ac
 
 set tabstop=2
 set expandtab
