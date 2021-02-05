@@ -1,5 +1,4 @@
 set number
-<<<<<<< HEAD
 //colorscheme afterglow 
 " colorscheme afterglow 
 " colorscheme gotham256 
