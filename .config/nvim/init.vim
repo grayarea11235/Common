@@ -1,5 +1,5 @@
 set number
-//colorscheme afterglow 
+" colorscheme afterglow 
 " colorscheme afterglow 
 " colorscheme gotham256 
 colorscheme happy_hacking
