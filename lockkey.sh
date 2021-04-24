@@ -18,9 +18,9 @@ value="$(xset q | grep 'LED mask' | awk '{ print $NF }')"
 
 if [ $(( 0x$value & 0x$mask )) == $mask ]
 then
-    output="$key Lock is on"
+    output="$key on"
 else
-    output="$key Lock is off"
+    output="$key off"
 fi
 
 echo $output
