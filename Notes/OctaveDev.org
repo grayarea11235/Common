@@ -1,0 +1,7 @@
+* Using the Ocrave Devel Library
+
+** Installing
+
+sudo apt install liboctave-dev
+
+** Embedding : Simple example
