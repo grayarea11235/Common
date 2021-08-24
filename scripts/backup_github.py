@@ -1,11 +1,12 @@
-from github import Github
 import os
 import pygit2
+
+from github import Github
 
 
 def backup_repos():
     '''
-    This depends on the github toten being set in the environment
+    This depends on the github token being set in the environment
     variable GITHUB_TOKEN.
     '''
     token = os.environ['GITHUB_TOKEN']
@@ -17,9 +18,13 @@ def backup_repos():
         print('Repo name is {} and url is {}'.format(repo.name, repo.url))
         dest_path = os.path.join(root_path, repo.name)
 
-        print('Cloning to {}'.format(dest_path)) 
-        repo_clone = pygit2.clone_repository(repo.git_url, dest_path)
-        print(repo_clone)
+        print('Backing up to {}'.format(dest_path))
+        
+        if os.path.exists(dest_path):
+            print('Do a pull')
+        else:
+            repo_clone = pygit2.clone_repository(repo.git_url, dest_path)
+            print(repo_clone)
 
         # We have to use Pygit2
         # https://stackoverflow.com/questions/49458329/create-clone-and-push-to-github-repo-using-pygithub-and-pygit2
