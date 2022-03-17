@@ -16,6 +16,8 @@
 
 (display-time)
 
+(global-set-key (kbd "C-x C-b") 'ibuffer) 
+
 ;; Turn on the active buffer active line highlight
 (global-hl-line-mode 0)
 (set-face-background hl-line-face "gray33")
